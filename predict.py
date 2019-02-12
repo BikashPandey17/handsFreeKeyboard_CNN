@@ -1,7 +1,7 @@
 # this is to predict in real time
 # from preprocessed images and
 #pre created histograms
-
+#proy_comment
 import cv2
 import numpy as np
 import math
