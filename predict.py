@@ -17,7 +17,7 @@ fontScale              = 1
 fontColor              = (255,255,255)
 lineType               = 2
 
-model = load_model('model/a-z_0_9.h5')
+model = load_model('model/extended_atoz_2.h5')
 
 cv2.namedWindow('Thresh limit')
 
@@ -106,11 +106,16 @@ def result_map(x):
         ans = 24
     if x == "[25]":
         ans = 25
+    if x == "[26]":
+        ans = 26
+    if x == "[27]":
+        ans = 27
     return ans
 
 
 
 def manage_image_opr(frame, hand_hist):
+    print("inside manage opr")
     roi = frame[100:400, 300:600]
 
     cv2.rectangle(frame, (300, 100), (600, 400), (0, 255, 0), 0)
